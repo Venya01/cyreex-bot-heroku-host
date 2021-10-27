@@ -447,8 +447,8 @@ bot.on("message", async message => {
         .setDescription(`Bitcoin Árfolyam`)
         .setColor("#ff1800")
         .setFooter(bot.user.username)
-        .addField("Bitcoin jelenlegi árfolyama: " + data.data.bitcoin.huf + " HUF ")
-        .addField("Bitcoin jelenlegi árfolyama: " + data.data.bitcoin.usd + " USD ")
+        .addField("Bitcoin jelenlegi árfolyama: " + data.data.bitcoin.huf + " HUF ", "💸")
+        .addField("Bitcoin jelenlegi árfolyama: " + data.data.bitcoin.usd + " USD ", "💸")
         .setThumbnail("https://cdn.discordapp.com/attachments/720055841390198815/884817291114610748/bitcoin-icon-6219383_1280.png")
 
         message.channel.send(btcEmbed);
@@ -467,8 +467,8 @@ bot.on("message", async message => {
         .setDescription(`Ethereum Árfolyam`)
         .setColor("#ff1800")
         .setFooter(bot.user.username)
-        .addField("Ethereum jelenlegi árfolyama: " + data.data.ethereum.huf + " HUF ","***")
-        .addField("Ethereum jelenlegi árfolyama: " + data.data.ethereum.usd + " USD ","***")
+        .addField("Ethereum jelenlegi árfolyama: " + data.data.ethereum.huf + " HUF ","💸")
+        .addField("Ethereum jelenlegi árfolyama: " + data.data.ethereum.usd + " USD ","💸")
         .setThumbnail("https://cdn.discordapp.com/attachments/757183793671962705/900778830325764096/eth.png")
 
         message.channel.send(ethEmbed);
@@ -487,8 +487,8 @@ bot.on("message", async message => {
         .setDescription(`Dogecoin Árfolyam`)
         .setColor("#ff1800")
         .setFooter(bot.user.username)
-        .addField("Dogecoin jelenlegi árfolyama: " + data.data.dogecoin.huf + " HUF ","***")
-        .addField("Dogecoin jelenlegi árfolyama: " + data.data.dogecoin.usd + " USD ","***")
+        .addField("Dogecoin jelenlegi árfolyama: " + data.data.dogecoin.huf + " HUF ","💸")
+        .addField("Dogecoin jelenlegi árfolyama: " + data.data.dogecoin.usd + " USD ","💸")
         .setThumbnail("https://cdn.discordapp.com/attachments/757183793671962705/900779850103660645/Dogecoin_b.jpg")
 
         message.channel.send(ethEmbed);
