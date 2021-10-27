@@ -17,7 +17,7 @@ module.exports = {
                 },
                 {
                     name: '🤪 Fun',
-                    value: `meme, cat, dog, jail, ship, méret, howgay, FI, hug, kill, hack, nitro, hello`,
+                    value: `meme, cat, dog, ship, méret, howgay, FI, hug, kill, hack, nitro, hello`,
                     inline: true,
                 },
                 {
