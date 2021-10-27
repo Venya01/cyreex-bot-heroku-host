@@ -36,11 +36,6 @@ module.exports = {
                     inline: true,
                 },
                 {
-                    name: '🎮 Discord games',
-                    value: `poker, fishing, betrayal, ytt`,
-                    inline: true,
-                },
-                {
                     name: '💸 Crypto',
                     value: `btc,eth,doge`,
                     inline: true,
