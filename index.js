@@ -692,7 +692,6 @@ bot.on("message", async (message) => {
                 validate: null
             }),
             headers: {
-                "Authorization": `Bot ${tokenfile.token}`,
                 "Content-Type": "application/json"
             }
         }).then(res => res.json())
@@ -713,7 +712,6 @@ bot.on("message", async (message) => {
                 validate: null
             }),
             headers: {
-                "Authorization": `Bot ${tokenfile.token}`,
                 "Content-Type": "application/json"
             }
         }).then(res => res.json())
@@ -734,7 +732,6 @@ bot.on("message", async (message) => {
                 validate: null
             }),
             headers: {
-                "Authorization": `Bot ${tokenfile.token}`,
                 "Content-Type": "application/json"
             }
         }).then(res => res.json())
@@ -755,7 +752,6 @@ bot.on("message", async (message) => {
                 validate: null
             }),
             headers: {
-                "Authorization": `Bot ${tokenfile.token}`,
                 "Content-Type": "application/json"
             }
         }).then(res => res.json())
@@ -769,7 +765,7 @@ bot.on("message", async (message) => {
 })
 
 
-bot.login(tokenfile.token);
+bot.login(process.env.BOT_TOKEN);
 
 bot.on("message", async message => {
     let MessageArray = message.content.split(" ");
