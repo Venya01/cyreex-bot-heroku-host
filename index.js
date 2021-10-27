@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const tokenfile = require("./tokenfile.json");
 const botconfig = require("./botconfig.json");
 const bot = new Discord.Client({disableEveryone: true});
 var weather = require('weather-js');
@@ -498,7 +497,7 @@ bot.on("message", async message => {
     }
 
 })
-bot.login(tokenfile.token);
+bot.login(process.env.BOT_TOKEN);
 
 bot.on("message", async (message) => {
     if(!message.guild || message.author.bot || !message.content.trim().startsWith(botconfig.prefix)) return;
@@ -598,7 +597,7 @@ bot.on("message", async (message) => {
 
 
 
-bot.login(tokenfile.token);
+bot.login(process.env.BOT_TOKEN);
 
 // Create a new DisTube
 const distube = new DisTube(client, { searchSongs: true, emitNewSongOnly: true });
@@ -672,7 +671,7 @@ distube
         message.channel.send("Hiba történt: " + e);
     });
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
 
 bot.on("message", async (message) => {
     if(!message.guild || message.author.bot || !message.content.trim().startsWith(botconfig.prefix)) return;
